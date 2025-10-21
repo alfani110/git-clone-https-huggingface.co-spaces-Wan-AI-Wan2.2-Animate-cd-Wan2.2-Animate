@@ -18,7 +18,20 @@ A user-friendly **Gradio web interface** for the Wan2.2 video generation models.
 
 ## Quick Start
 
-### 1. Installation
+### Option 1: Run on Google Colab (FREE!)
+
+**Don't have an NVIDIA GPU? Use Google Colab!**
+
+1. Open the notebook: **[Wan2_2_Colab.ipynb](Wan2_2_Colab.ipynb)**
+2. Upload to [Google Colab](https://colab.research.google.com/)
+3. Enable GPU: Runtime → Change runtime type → T4 GPU
+4. Run all cells and wait for the gradio.live link
+
+See the [Colab Guide](COLAB_GUIDE.md) for detailed instructions.
+
+### Option 2: Run Locally (Requires NVIDIA GPU)
+
+#### 1. Installation
 
 ```bash
 # Clone the repository (if not already done)
@@ -29,7 +42,7 @@ cd Wan2.2
 pip install -r requirements_ui.txt
 ```
 
-### 2. Download Models
+#### 2. Download Models
 
 Download at least one model checkpoint (TI2V-5B recommended for consumer GPUs):
 
@@ -43,7 +56,7 @@ huggingface-cli download Wan-AI/Wan2.2-TI2V-5B --local-dir ./Wan2.2-TI2V-5B
 
 For other models, see the [UI Guide](UI_GUIDE.md#2-download-model-checkpoints).
 
-### 3. Launch the UI
+#### 3. Launch the UI
 
 **Linux/Mac:**
 ```bash
