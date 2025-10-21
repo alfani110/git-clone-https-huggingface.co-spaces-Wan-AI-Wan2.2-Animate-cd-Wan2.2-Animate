@@ -8,10 +8,18 @@ A user-friendly **Gradio web interface** for the Wan2.2 video generation models.
 
 ## Features
 
+### Main UI (app.py)
 - **Text-to-Video**: Generate videos from text descriptions
 - **Image-to-Video**: Animate images with motion
 - **Text-Image-to-Video**: Flexible model that runs on consumer GPUs (RTX 4090)
 - **Speech-to-Video**: Create talking videos from audio
+
+### Character Replacement UI (app_animate.py) 🆕
+- **Character Animation**: Make your character perform motions from a driving video
+- **Character Replacement**: Replace characters in videos while preserving background
+- **2-Step Process**: Preprocessing + Generation with dedicated UI
+
+### General
 - **Easy to Use**: No command-line expertise required
 - **Real-time Logs**: Monitor generation progress
 - **Multiple Resolutions**: Support for 480P, 720P, and custom sizes
@@ -74,6 +82,39 @@ python app.py
 ```
 
 The web interface will open at **http://localhost:7860**
+
+### Option 3: Character Replacement UI 🆕
+
+For **character animation and replacement** (Wan-Animate):
+
+**Linux/Mac:**
+```bash
+./launch_animate_ui.sh
+```
+
+**Windows:**
+```batch
+launch_animate_ui.bat
+```
+
+**Or directly with Python:**
+```bash
+python app_animate.py
+```
+
+The character replacement interface will open at **http://localhost:7861**
+
+**What it does:**
+- **Animation Mode**: Make your character perform motions from a video
+- **Replacement Mode**: Replace a character in a video with your own character
+
+See the [Character Replacement Guide](CHARACTER_REPLACEMENT_GUIDE.md) for detailed instructions.
+
+**Requirements:**
+- Download **Wan2.2-Animate-14B** model
+- 80GB VRAM (A100/H100) or use Colab
+
+---
 
 ## Screenshots
 
