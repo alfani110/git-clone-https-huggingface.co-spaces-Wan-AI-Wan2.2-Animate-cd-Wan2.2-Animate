@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Model checkpoints (large files)
+Wan2.2-T2V-A14B/
+Wan2.2-I2V-A14B/
+Wan2.2-TI2V-5B/
+Wan2.2-S2V-14B/
+Wan2.2-Animate-14B/
+*.safetensors
+*.bin
+*.ckpt
+*.pth
+
+# Generated videos and outputs
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3
+tts.wav
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+*.cache
